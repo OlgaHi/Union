@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const { body, validationResult } = require('express-validator');
 const gravatar = require('gravatar');
+const bcrypt = require('bcryptjs');
 
 const User = require('../../models/User');
 
@@ -37,13 +38,21 @@ async (req, res) => {
     d: 'mm'
   })
   
+  //Create a new user
   user = new User({
     name,
     email,
     avatar,
     password  
   })
-  res.send('User route')
+
+  const salt = await bcrypt.genSalt(10);
+
+  user.password = await bcrypt.hash(password, salt);
+
+  await user.save();
+
+  res.send('User saved')
   } catch(err) {
     console.error(err.message);
     res.status(500).send('Server error');

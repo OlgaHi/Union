@@ -13,6 +13,10 @@ const ProfileSchema = new mongoose.Schema({
   },
   phoneNumber: {
     type: String
+  },
+  date: {
+    type: Date,
+    default: Date.now
   }
 
 });

@@ -39,5 +39,16 @@ async (req, res) => {
   
 });
 
+// GET all post api/posts
+router.get('/', auth, async(req, res) => {
+  try {
+    const posts = await Post.find().sort({date: -1}) //sort by more resent
+    res.json(posts);
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).send('Server Error')
+  }
+});
+
 
 module.exports = router;

@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -10,10 +10,10 @@ const Home = () => {
           <p className="lead">
             Let's create our strong community
           </p>
-          {/* <div className="buttons">
+          <div className="buttons">
             <Link to="/register" className="btn btn-secondary">Sign Up</Link>
             <Link to="/login" className="btn btn-light">Login</Link>
-          </div> */}
+          </div>
         </div>
       </div>
     </section>

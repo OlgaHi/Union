@@ -12,10 +12,10 @@ const Navbar = () => {
             className="d-inline-block align-top"
             alt="logo"
             loading="lazy"
-          ></img><strong>Unity</strong></Link></h1>
+          ></img><strong>Union</strong></Link></h1>
       <ul>
         <li>
-          <Link to="/profiles">Neigbors</Link>
+          <Link to="/profiles">Neighbors</Link>
         </li>
         <li>
           <Link to="/register">Register</Link>

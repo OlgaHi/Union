@@ -148,9 +148,19 @@ ul {
   padding: 0.4rem;
   font-size: 1.2rem;
   border: 1px solid #ccc;
+  border-radius: 8px;
 }
 
 .form input[type='submit'],
 button {
   font: inherit;
 }
+
+.form input[type='text']:focus,
+.form input[type='email']:focus,
+.form input[type='password']:focus,
+.form input[type='date']:focus {
+  background: rgb(246, 246, 248);
+}
+
+

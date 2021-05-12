@@ -1,9 +1,19 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState} from 'react';
 import { Link } from 'react-router-dom';
 
 
 const Register = () => {
-  
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    password: '',
+    password2: ''
+  });
+
+  const { name, email, password, password2 } = formData;
+
+  const onChange = e => setFormData({ ...formData, [e.target.name]: e.target.value });
+
   return (
     <Fragment>
       <h1 className="large text">Sign Up</h1>
@@ -14,6 +24,8 @@ const Register = () => {
           type="text" 
           placeholder="Name" 
           name="name"
+          value={name}
+          onChange={e => onChange(e)}
           required />
         </div>
         <div className="form-group">
@@ -21,12 +33,16 @@ const Register = () => {
           type="email" 
           placeholder="Email Address"
           name="email" 
+          value={email}
+          onChange={e => onChange(e)}
           required />
         </div>
         <div className="form-group">
           <input
             type="password"
             placeholder="Password"
+            value={password}
+            onChange={e => onChange(e)}
             name="password"
             minLength="6"
           />
@@ -35,6 +51,8 @@ const Register = () => {
           <input
             type="password"
             placeholder="Confirm Password"
+            value={password2}
+            onChange={e => onChange(e)}
             name="password2"
             minLength="6"
           />

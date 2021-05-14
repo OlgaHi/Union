@@ -1,6 +1,7 @@
 :root {
   --primary-color: #17a2b8;
-  
+  --light-color: #f4f4f4;
+  --danger-color: #dc3545;
 }
 
 * {
@@ -162,5 +163,19 @@ button {
 .form input[type='date']:focus {
   background: rgb(246, 246, 248);
 }
+
+/* .alert {
+  padding: 0.8rem;
+  margin: 1rem 0;
+  opacity: 0.9;
+  background: var(--light-color);
+  color: #333;
+}
+
+.alert-danger {
+  background: var(--danger-color);
+  color: #fff;
+} */
+
 
 

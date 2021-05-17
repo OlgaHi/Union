@@ -14,7 +14,7 @@ body {
   font-family: 'Raleway', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
-  background-color: #fff;
+  /* background-color: #fff; */
   color: #333;
 }
 /* http://i.stack.imgur.com/vhoa0.jpg */
@@ -65,12 +65,10 @@ body {
   width: 100%;
   top: 0;
   border-bottom: solid 1px var(--line-color); 
-  opacity: 0.95;
-  /* background:rgb(41, 153, 228);    */
-  background:rgb(32, 78, 178);
-  
-  
-}
+  opacity: 0.95; 
+  background:rgb(41, 153, 228);  
+  /* background:rgb(13, 147, 236); */
+}    
 
 .navbar ul {
   display: flex;

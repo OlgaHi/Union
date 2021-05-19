@@ -4,7 +4,9 @@ import Home from './components/layout/Home';
 import Navbar from './components/layout/Navbar';
 import Register from './components/auth/Register';
 import Login from './components/auth/Login';
+import Dashboard from './components/dashboard/Dashboard';
 import './App.css';
+
 import { Provider } from 'react-redux';
 import store from './store';
 import Alert from './components/layout/Alert';
@@ -37,6 +39,7 @@ const App = () => {
           <Switch>
             <Route exact path="/register" component={Register} />
             <Route exact path="/login" component={Login} />
+            <Route exact path="/dashboard" component={Dashboard} />
           </Switch>
         </section>
       </Fragment>

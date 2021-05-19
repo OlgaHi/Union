@@ -1,25 +1,35 @@
 import React, { Fragment, useEffect }from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { getCurrentProfile} from '../../actions/profile';
 
-const Dashboard = ({ getCurrentProfile, auth: { user }, profile }) => {
+const Dashboard = ({ getCurrentProfile, auth: { user }, profile: { profile }}) => {
 
   useEffect(() => {
     getCurrentProfile();
-  }, [getCurrentProfile]);
+  }, []);
 
-  return <Fragment>
-    <h1 className="large text-primary"></h1>
+  return (
+    <Fragment>
       <p className="lead">
-        <i className="fas fa-user" /> Welcome <strong>{user && user.name}</strong>
+        <i className="fas fa-user" /> Welcome {user && user.name}
       </p>
-      {
-        
-      }
-  </Fragment>
-  
+      {profile !== null ? (
+        <Fragment>has</Fragment>
+      ) : (
+        <Fragment>
+          <p>Please add some info to your profile</p>
+          <Link to="/create-profile" className="btn btn-primary my-1">
+            Create Profile
+          </Link>
+        </Fragment>
+      )}
+    </Fragment>
+  );
 };
+  
+
 
 Dashboard.propTypes = {
   getCurrentProfile: PropTypes.func.isRequired,

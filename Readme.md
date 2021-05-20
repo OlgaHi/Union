@@ -31,7 +31,7 @@ Union – an application to create a strong community of neighbors. The main pur
 #### View In Browser
 
 - To Build and view in browser
-  - Navigate to union directory and use the command `npm start`
+  - Navigate to union directory and use the command `npm run dev`
   
 
 ## Technologies Used

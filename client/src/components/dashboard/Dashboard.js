@@ -8,7 +8,7 @@ const Dashboard = ({ getCurrentProfile, auth: { user }, profile: { profile }}) =
 
   useEffect(() => {
     getCurrentProfile();
-  }, []);
+  }, [getCurrentProfile]);
 
   return (
     <Fragment>

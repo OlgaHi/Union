@@ -8,6 +8,9 @@ const Navbar = ({ auth: { isAuthenticated, loading}, logout }) => {
   const authLinks = (
     <ul>
       <li>
+        <Link to="/profiles"><i className="fas fa-users"></i>{" "}Neighbors</Link>
+      </li>
+      <li>
         <Link to="/dashboard"><i className="fas fa-user"></i>{" "}</Link>
       </li>
       <li>
@@ -19,7 +22,7 @@ const Navbar = ({ auth: { isAuthenticated, loading}, logout }) => {
   const guestLinks = (
     <ul>
       <li>
-        <Link to="/profiles">Neighbors</Link>
+        <Link to="/profiles"><i className="fas fa-users"></i>{" "}Neighbors</Link>
       </li>
       <li>
         <Link to="/register">Register</Link>

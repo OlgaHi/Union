@@ -13,8 +13,6 @@ const initialState = {
 const Profile = ({ createProfile, history }) => {
   const [formData, setFormData] = useState(initialState);
 
-
-  
   const {
     address,
     bio, 

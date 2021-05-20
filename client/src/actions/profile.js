@@ -60,9 +60,6 @@ import {
     }
   };
 
-
-
-
   // Create or update profile
   export const createProfile = (formData, history, edit = false) => async (
     dispatch

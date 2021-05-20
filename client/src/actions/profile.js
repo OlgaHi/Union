@@ -2,7 +2,10 @@ import axios from 'axios';
 import { setAlert } from './alert';
 import { 
   GET_PROFILE,
-  PROFILE_ERROR} from './types';
+  GET_PROFILES,
+  PROFILE_ERROR,
+  CLEAR_PROFILE
+} from './types';
 
   // Get user profile
   export const getCurrentProfile = () => async (dispatch) => {
@@ -20,6 +23,11 @@ import {
       });
     }
   };
+
+  // Get all profiles
+
+
+
 
   // Create or update profile
   export const createProfile = (formData, history, edit = false) => async (

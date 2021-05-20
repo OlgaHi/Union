@@ -1,5 +1,6 @@
 import {
   GET_PROFILE,
+  GET_PROFILES,
   PROFILE_ERROR,
   CLEAR_PROFILE
 } from "../actions/types";
@@ -16,6 +17,12 @@ function profileReducer(state = initialState, action) {
 
   switch (type) {
     case GET_PROFILE:
+      return {
+        ...state,
+        profile: payload,
+        loading: false
+      };
+    case GET_PROFILES:
       return {
         ...state,
         profile: payload,

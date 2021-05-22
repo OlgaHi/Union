@@ -2,7 +2,7 @@ import React, { Fragment, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import ProfileItem from './ProfileItem';
-import Spinner from '../layout/Spinner';
+
 import { getProfiles } from '../../actions/profile';
 
 const Profiles = ({ getProfiles, profile: {profiles, loading}}) => {
@@ -11,10 +11,7 @@ const Profiles = ({ getProfiles, profile: {profiles, loading}}) => {
   }, [getProfiles]);
 
   return (
-    <Fragment>
-      {loading ? (
-        <Spinner />
-      ) : (
+
     <Fragment>
 
       <h1 className='large text-primary'>Neighbors</h1>
@@ -31,9 +28,8 @@ const Profiles = ({ getProfiles, profile: {profiles, loading}}) => {
     </Fragment>
   )
 };
-</Fragment>
-  );
-};
+
+
 
 Profiles.propTypes = {
   getProfiles: PropTypes.func.isRequired,

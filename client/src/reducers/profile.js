@@ -39,7 +39,7 @@ function profileReducer(state = initialState, action) {
       return {
         ...state,
         profile: null,
-        loading: false
+      
       }
     default:
       return state;

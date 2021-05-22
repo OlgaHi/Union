@@ -1,6 +1,5 @@
 import React, { Fragment, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { getProfileById } from '../../actions/profile';
 import Spinner from '../layout/Spinner';
@@ -21,7 +20,6 @@ const IndividualProfile = ({ getProfileById, profile: {profile}, match }) => {
         <p>{profile.bio && <span>{profile.bio}</span>}</p>
         <p className='my-1'>{profile.user.email && <span><i className="fas fa-home"></i>{" "}{profile.user.email}</span>}</p>
         <p className='my-1'>{profile.phoneNumber && <span><i className="fas fa-mobile-alt"></i> {profile.phoneNumber}</span>}</p>
-
         <p className='my-1'>{profile.address && <span><i className="fas fa-home"></i>{" "}{profile.address}</span>}</p>
       </div> 
       <img
@@ -29,7 +27,6 @@ const IndividualProfile = ({ getProfileById, profile: {profile}, match }) => {
             width="100%" 
             alt=""
           ></img> 
-      
     </Fragment>
   )}
   </Fragment>

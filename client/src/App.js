@@ -9,6 +9,7 @@ import Profile from './components/profile-forms/Profile';
 import Profiles from './components/profiles/Profiles';
 import IndividualProfile from './components/profile/IndividualProfile';
 import PrivateRoute from './components/routing/PrivateRoute';
+import Posts from './components/posts/Posts';
 import './App.css';
 
 import { Provider } from 'react-redux';
@@ -46,6 +47,7 @@ const App = () => {
             <Route exact path="/profile/:id" component={IndividualProfile} />
             <PrivateRoute exact path="/dashboard" component={Dashboard} />
             <PrivateRoute exact path="/create-profile" component={Profile} />
+            <PrivateRoute exact path="/posts" component={Posts} />
           </Switch>
         </section>
       </Fragment>

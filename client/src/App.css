@@ -8,12 +8,14 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Varela Round';
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  
   font-size: 1rem;
   line-height: 1.6;
+  /* font-family: 'Pattaya'; */
   /* background-color: #fff; */
   color: #333;
 }
@@ -28,6 +30,7 @@ body {
   font-size: 4rem;
   line-height: 1.2;
   margin-bottom: 1rem;
+  font-family: 'Pattaya';
 }
 
 .dark-overlay { 
@@ -101,7 +104,7 @@ ul {
 }
 
 .btn {
-  display: inline-block;
+  display: inline-block; 
   background: var(--light-color);
   color: #333;
   padding: 0.4rem 1.3rem;
@@ -222,4 +225,7 @@ button {
   text-align: center;
 }
 
+.round-img {
+  border-radius: 50%;
+}
 

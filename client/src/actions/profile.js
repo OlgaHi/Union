@@ -3,7 +3,6 @@ import { setAlert } from './alert';
 import { 
   GET_PROFILE,
   GET_PROFILES,
-  RESET_PROFILE_LOADING,
   PROFILE_ERROR,
   CLEAR_PROFILE
 } from './types';
@@ -20,7 +19,7 @@ import {
     } catch (err) {
       dispatch({
         type: PROFILE_ERROR,
-        payload: { msg: err.response.statusText, status: err.response.status }
+        payload: { msg: err.res.statusText, status: err.response.status }
       });
     }
   };
@@ -28,7 +27,7 @@ import {
   // Get all profiles
   export const getProfiles = () => async (dispatch) => {
     dispatch({ type: CLEAR_PROFILE });
-    dispatch({ type: RESET_PROFILE_LOADING });
+    // dispatch({ type: RESET_PROFILE_LOADING });
   
     try {
       const res = await axios.get('/api/profile');
@@ -51,7 +50,7 @@ import {
       const res = await axios.get(`/api/profile/user/${userId}`);
 
       dispatch({
-        type: GET_PROFILES,
+        type: GET_PROFILE,
         payload: res.data
       });
     } catch (err) {

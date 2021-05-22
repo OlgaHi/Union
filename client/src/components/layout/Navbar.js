@@ -42,7 +42,7 @@ const Navbar = ({ auth: { isAuthenticated, loading}, logout }) => {
             className="d-inline-block align-top"
             alt="logo"
             loading="lazy"
-          ></img><strong>Union</strong></Link>
+          ></img>Union</Link>
       </h1>
       { !loading && (<Fragment>{ isAuthenticated ? authLinks : guestLinks}</Fragment>)}
 

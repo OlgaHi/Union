@@ -6,6 +6,9 @@ By _Olha Hizhytska_
 
 Union – an application to create a strong community of neighbors. The main purpose of this application is to unite people to help each other. The idea is to create a platform, where everyone can leave the post asking or offering their help. For example, maybe your elderly neighbor needs some help to mow the grass, he can post his message using the Union application, and maybe some other neighbor can help him with that or some person from a neighborhood wants to donate some food or clothe and another person is actually in need of that. What he needs to do is just make a post for another person to see. 
 
+![](screenshot.png)
+
+## User stories
 <details>
   <summary>Expand</summary>
   

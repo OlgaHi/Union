@@ -23,7 +23,7 @@ const IndividualProfile = ({ getProfileById, profile: {profile}, match }) => {
         <p className='my-1'>{profile.address && <span><i className="fas fa-home"></i>{" "}{profile.address}</span>}</p>
       </div> 
       <img
-            src="https://vistatec.com/wp-content/uploads/2020/12/Life-Science-Background-Header.jpg"
+            src="https://png.pngtree.com/thumb_back/fw800/background/20190521/pngtree-global-network-connection-technology-abstract-background-image_113942.jpg"
             width="100%" 
             alt=""
           ></img> 
@@ -47,4 +47,6 @@ const mapStateToProps = (state) => ({
 
 export default connect(mapStateToProps, { getProfileById })(IndividualProfile);
 
-// https://images.unsplash.com/photo-1485627941502-d2e6429a8af0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80
+//https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlO43ADH78p3GbdX28Fh3mex50NaCdKpnvng&usqp=CAU
+
+//https://png.pngtree.com/thumb_back/fw800/background/20190521/pngtree-global-network-connection-technology-abstract-background-image_113942.jpg

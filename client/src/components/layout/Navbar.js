@@ -37,8 +37,8 @@ const Navbar = ({ auth: { isAuthenticated, loading}, logout }) => {
     <nav className="navbar">
       <h1><Link className="navbar-brand" to="/">
           <img
-            src="https://cdn.pixabay.com/photo/2020/10/23/14/42/handshake-5678931__340.png"
-            width="11%"
+            src="https://cdn.pixabay.com/photo/2015/02/27/08/12/handshake-651818_960_720.png"
+            width="7%"
             className="d-inline-block align-top"
             alt="logo"
             loading="lazy"
